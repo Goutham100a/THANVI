@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You, Thanvi ❤</title>
+    <style>
+        body {
+            background-color: pink;
+            color: black;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow-y: auto;
+        }
+        .container {
+            max-width: 600px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: left;
+            backdrop-filter: blur(10px);
+            margin: 20px;
+        }
+        .message {
+            font-size: 18px;
+            line-height: 1.6;
+            opacity: 0;
+            animation: fadeIn 3s forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .floating-hearts {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+        .heart-shape {
+            position: absolute;
+            font-size: 24px;
+            color: red;
+            animation: floatUp 5s infinite ease-in-out;
+        }
+        @keyframes floatUp {
+            from { transform: translateY(100vh); opacity: 1; }
+            to { transform: translateY(-10vh); opacity: 0; }
+        }
+        .whatsapp-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #25D366;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="floating-hearts"></div>
+    <script>
+        function createHeart() {
+            const heart = document.createElement("div");
+            heart.className = "heart-shape";
+            heart.innerHTML = "❤";
+            heart.style.left = Math.random() * 100 + "vw";
+            heart.style.animationDuration = Math.random() * 3 + 2 + "s";
+            document.querySelector(".floating-hearts").appendChild(heart);
+            setTimeout(() => heart.remove(), 5000);
+        }
+        setInterval(createHeart, 500);
+    </script>
+    <div class="container">
+        <p style="font-size: 20px; font-weight: bold;">Hello my dear Thanvi,</p>
+        <p class="message">
+            So officially e enan dhoora mltha taanvi. Masth dream deedh ithe 😌 e ninna bene pnda. But enda av epandala e express mlthdana.... nikk banga avondh undu ancha incha pndh. Enda ora dala pnthnda yn kendhve atha Taanvi. Yn ninan epala understand mlthondh baide. Drinking onji burdh. But av vishaya d nama incha mlpuna Agathya ijnd....fix mltholi but sudden incha mlthd poya atha. Enk heavy avondh undu. Mns g deppere apuji. Chance korja atleast samdana d pathere aandala avakasha koryana?
+            <br><br>
+            E pnda dumbu ottige uppunaga edde avondh ithnd but future ynji pndh...nikk encha apund incha pnre...yn ynna future nenthd ninan love mlthin. Ithe ennna future n e break mltha atha . Yn ynna future e nenthd ithe. Bka pnda life goals nikk masth undu pndh....enk life goals pndh ithine e... E yn namma yelya family madime aadh ottige kushi uppod pndh.
+            <br><br>
+            Ynan masth ignore mltha. Yn ynna respect la kaleye poora. Just to get you. Enk regret avondh undu ninan budre. And I will never find a girl like you.
+            <br><br>
+            Finally. All the best for your life. Live it the way you want and be happy. I'm messed up, but don't bother about me. ynna life Nana dumbuleka apuji. Eer dada mlthndla apuji. Enan sari mlpere nikk maatra chance. But Ik you don't want me .yn dada mlthd d saithndla nikk care ijji pndh. But it's okay. Yn ninna nenapun pathondh life d upve. Life d nikk epa alone and missed feel apund epa nikk dala thondre apund apaga enan yenn. Ninna Goutham ninna baaba, ninna baale epala ulle nikk.
+            <br><br>
+            Enna life idi nikk wait mlpve with 0% hopes.
+            <br><br>
+            I love you so much baaba❤
+            <br><br>
+            Take care❤<br>
+            Stay happy and stay healthy.
+        </p>
+        <p style="margin-top: 20px; font-weight: bold;">Expecting a reply for this. Or else think I am dead from now onwards 😌 ❤</p>
+        <a class="whatsapp-btn" href="https://wa.me/9995688916" target="_blank">Message me on WhatsApp</a>
+    </div>
+</body>
+</html>
